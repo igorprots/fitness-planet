@@ -244,6 +244,21 @@ button:focus {
 		1. header
 =================================================*/
 
+#home {
+    background-image: url(/gemvast/assets/images/banner/dark-banner.JPG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.rgba-gradient {
+    background: -moz-linear-gradient(45deg, rgba(7, 4, 27, 0.7), rgba(116, 104, 104, 0.7) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(6, 5, 8, 0.7), rgba(116, 104, 104, 0.7) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(6, 5, 8, 0.7)), to(rgba(116, 104, 104, 0.7)));
+    background: -o-linear-gradient(45deg, rgba(7, 4, 27, 0.7), rgba(116, 104, 104, 0.7)) 100%);
+    background: linear-gradient(to 45deg, rgba(7, 4, 27, 0.7), rgba(116, 104, 104, 0.7) 100%);
+}
+
 .megamenu_lists>li>a {
     padding: 10px;
     color: #101010;
@@ -3364,6 +3379,10 @@ button:focus {
 /*=================================================
 		20. contact
 ===============================================*/
+
+#contact h2 {
+    color: white;
+}
 
 .xs-map-contact {
     height: 450px;
