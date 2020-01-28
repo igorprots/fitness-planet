@@ -245,10 +245,11 @@ button:focus {
 =================================================*/
 
 #home {
-    background-image: url(/gemvast/assets/images/banner/dark-banner.JPG);
+    background-image: url(/gemvast/assets/images/banner/banner-dark.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center top;
 }
 
 .rgba-gradient {
