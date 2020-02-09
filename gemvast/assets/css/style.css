@@ -37,6 +37,9 @@ body {
     font-weight: 400;
     line-height: 1.625;
     color: #666565;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
 }
 
 h1,
@@ -245,19 +248,13 @@ button:focus {
 =================================================*/
 
 #home {
-    background-image: url(/gemvast/assets/images/banner/banner-dark.jpg);
+    background-image: url(../images/banner/banner-dark.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     background-position: center top;
-}
-
-.rgba-gradient {
-    background: -moz-linear-gradient(45deg, rgba(7, 4, 27, 0.7), rgba(116, 104, 104, 0.7) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(6, 5, 8, 0.7), rgba(116, 104, 104, 0.7) 100%);
-    background: -webkit-gradient(linear, 45deg, from(rgba(6, 5, 8, 0.7)), to(rgba(116, 104, 104, 0.7)));
-    background: -o-linear-gradient(45deg, rgba(7, 4, 27, 0.7), rgba(116, 104, 104, 0.7)) 100%);
-    background: linear-gradient(to 45deg, rgba(7, 4, 27, 0.7), rgba(116, 104, 104, 0.7) 100%);
+    width: 100vw;
+    height: 100vh;
 }
 
 .megamenu_lists>li>a {
@@ -1420,6 +1417,7 @@ button:focus {
     line-height: 7.5rem;
     color: #FFFFFF;
     text-indent: -5px;
+    width: 100%;
 }
 
 .xs-banner-title span {
@@ -1430,6 +1428,7 @@ button:focus {
 .xs-banner-dark {
     padding-top: 200px;
     padding-bottom: 200px;
+    width: 100%;
 }
 
 .xs-banner-dark .xs-banner-title {
@@ -1866,6 +1865,16 @@ button:focus {
     background: rgba(16, 16, 16, 0.9);
 }
 
+.thbg-1 {
+    background: rgba(112, 111, 111, 0.6)!important;
+    height: 35px!important;
+}
+
+.thbg-2 {
+    background: rgba(85, 84, 84, 0.4)!important;
+    height: 35px!important;
+}
+
 .xs-schedule-table .table,
 .xs-schedule-table-dark .table,
 .xs-schedule-table-light .table {
@@ -1889,7 +1898,7 @@ button:focus {
 .xs-schedule-table-dark .table thead th,
 .xs-schedule-table-light .table thead th {
     width: 145px;
-    height: 85px;
+    height: 55px;
     border-bottom: 1px solid #343434;
 }
 
@@ -1982,7 +1991,7 @@ button:focus {
 .xs-schedule-table-dark .table tbody td .xs-schedule-info h4,
 .xs-schedule-table-light .table tbody td .xs-schedule-info h4 {
     margin-top: -20px;
-    font-size: 18px;
+    font-size: 15px;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -2155,6 +2164,166 @@ button:focus {
 .xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-3:hover span,
 .xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-3:hover span {
     background-color: #bf8cff !important;
+    color: #fff;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-4 span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-4 span {
+    background-color: #ce11ce;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-4:hover h4,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-4:hover h4 {
+    color: #ce11ce !important;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-4:hover span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-4:hover span {
+    background-color: #ce11ce !important;
+    color: #fff;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-5 span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-5 span {
+    background-color: #195822;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-5:hover h4,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-5:hover h4 {
+    color: #195822 !important;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-5:hover span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-5:hover span {
+    background-color: #195822 !important;
+    color: #fff;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-6 span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-6 span {
+    background-color: #0a39d4;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-6:hover h4,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-6:hover h4 {
+    color: #0a39d4 !important;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-6:hover span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-6:hover span {
+    background-color: #0a39d4 !important;
+    color: #fff;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-7 span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-7 span {
+    background-color: #4e0707;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-7:hover h4,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-7:hover h4 {
+    color: #4e0707 !important;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-7:hover span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-7:hover span {
+    background-color: #4e0707 !important;
+    color: #fff;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-8 span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-8 span {
+    background-color: #ff9100;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-8:hover h4,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-8:hover h4 {
+    color: #ff9100 !important;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-8:hover span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-8:hover span {
+    background-color: #ff9100 !important;
+    color: #fff;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-9 span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-9 span {
+    background-color: #3e3f2e;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-9:hover h4,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-9:hover h4 {
+    color: #3e3f2e !important;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-9:hover span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-9:hover span {
+    background-color: #3e3f2e !important;
+    color: #fff;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-10 span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-10 span {
+    background-color: #eb6b6b;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-10:hover h4,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-10:hover h4 {
+    color: #eb6b6b !important;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-10:hover span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-10:hover span {
+    background-color: #eb6b6b !important;
+    color: #fff;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-11 span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-11 span {
+    background-color: #52767c;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-11:hover h4,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-11:hover h4 {
+    color: #52767c !important;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-11:hover span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-11:hover span {
+    background-color: #52767c !important;
+    color: #fff;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-12 span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-12 span {
+    background-color: #64f603;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-12:hover h4,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-12:hover h4 {
+    color: #64f603 !important;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-12:hover span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-12:hover span {
+    background-color: #64f603 !important;
+    color: #fff;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-13 span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-13 span {
+    background-color: #cf8700;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-13:hover h4,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-13:hover h4 {
+    color: #cf8700 !important;
+}
+
+.xs-schedule-table-dark .table tbody td .xs-schedule-info.xs-tbg-13:hover span,
+.xs-schedule-table-light .table tbody td .xs-schedule-info.xs-tbg-13:hover span {
+    background-color: #cf8700 !important;
     color: #fff;
 }
 
