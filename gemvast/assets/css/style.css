@@ -248,13 +248,21 @@ button:focus {
 =================================================*/
 
 #home {
-    background-image: url(../images/banner/banner-dark.jpg);
+    /* background-image: url(../images/banner/banner-dark.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    background-position: center top;
+    background-position: center top; */
     width: 100vw;
     height: 100vh;
+    position: relative;
+}
+
+.banner-dark_img {
+    width: 100vw;
+    height: 100vh !important;
+    position: absolute;
+    object-fit: cover;
 }
 
 .megamenu_lists>li>a {
@@ -1405,8 +1413,8 @@ button:focus {
 
 .xs-banner-subtitle {
     margin-bottom: 0;
-    font-size: 1.875rem;
-    font-weight: 600;
+    font-size: 2.875rem;
+    font-weight: 900;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -1426,8 +1434,9 @@ button:focus {
 }
 
 .xs-banner-dark {
-    padding-top: 200px;
+    padding-top: 300px;
     padding-bottom: 200px;
+    padding-left: 45px;
     width: 100%;
 }
 

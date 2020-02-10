@@ -327,8 +327,9 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
         top: 170px;
     }
     .xs-banner-dark {
-        padding-top: 130px;
+        padding-top: 236x;
         padding-bottom: 150px;
+        padding-left: 100px;
     }
     .xs-banner-dark .xs-banner-title {
         margin-bottom: 20px;
@@ -571,12 +572,19 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
         background-attachment: fixed;
         background-position: center top;
     }
+    .xs-banner-subtitle {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .xs-banner-title {
+        font-size: 2rem;
+    }
     .xs-banner-area {
         padding-top: 30px;
         padding-bottom: 35px;
     }
     .xs-banner-area .xs-banner-title {
-        font-size: 2.25rem;
+        font-size: 1.25rem;
         line-height: 2.625rem;
     }
     .xs-menu-tools {
@@ -584,8 +592,9 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
     }
     .xs-banner-dark,
     .xs-banner {
-        padding-top: 60px;
+        padding-top: 230px;
         padding-bottom: 60px;
+        padding-left: 15px;
     }
     .xs-shape {
         top: 120px;
