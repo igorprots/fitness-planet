@@ -5,13 +5,30 @@ date_default_timezone_set('Europe/Moscow');
 $to = "test@sdsa.com";
 $subject = "Заказ с главной посадочной страницы";
 
+
+
+  foreach ($_POST as $key => $value) {
+
+    echo $key;
+    echo " >> ";
+    echo $value;
+    echo "<br>";
+}
+
+
 if(@$_POST["hidden"])
   {
     $dt=date("d F Y, H:i:s"); // дата и время
 
     $fnm=$_POST["name"];
+    $fmail=$_POST["email"];
+    $fphone=$_POST["phone"];
+    $fmessage=$_POST["message"];
 
-    $car_variable=$_POST["car"];
+    echo 'username: ' . $fnm;
+    echo 'usermail: ' . $fmail;
+    echo 'userphone: ' . $fphone;
+    echo 'usermessage: ' . $fmessage;
 
 
     $fnm=htmlspecialchars($fnm); // обрабатываем
@@ -19,12 +36,10 @@ if(@$_POST["hidden"])
 
     $email="info@net-komaroff.ru"; // e-mail откуда письмо
 
-    $phone=$_POST["phone"];
-
     $mess.="Имя: $fnm\n";
-    $mess.="Телефон: $phone";
-    $mess.="favorite car: $car_variable";
-
+    $mess.="Телефон: $fphone\n";
+    $mess.="Email: $fmail\n";
+    $mess.="Повідомлення: $fmessage\n";
 
     $mess .= "\n\nIP: " . $_SERVER["REMOTE_ADDR"];
     $mess .= "\n\nUSER AGENT: " . $_SERVER["HTTP_USER_AGENT"];
