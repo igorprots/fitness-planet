@@ -1,7 +1,5 @@
-<!-- get_header('Page Name','Title') -->
 <!doctype html>
 <html class="no-js" lang="ua">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta charset="utf-8">
@@ -14,22 +12,23 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,700,800,900" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/iconfont.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
-    <!--For Plugins external css-->
-    <link rel="stylesheet" href="assets/css/plugins.css" />
-    <!--Theme css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!--Theme Responsive css-->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-</head>
 
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/magnific-popup.css">
+    <!--For Plugins external css-->
+    <link rel="stylesheet" type="text/css" href="/css/plugins.css" />
+    <!--Theme css -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
+
+</head>
 <body>
 
 
@@ -930,7 +929,7 @@
                     </div>
                 </div>
 
-                <form action="send-super.php" class="xs-form xs-form-dark xs-dark-shadow" id="xs-contact-form" method="POST">
+                <form action="/data/sendmail.php" class="xs-form xs-form-dark xs-dark-shadow" id="xs-contact-form" method="POST">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group xs-form-anim mb-4">
@@ -1122,23 +1121,23 @@
 
 
     <!-- js file start -->
-    <script src="assets/js/jquery-3.2.1.min.js "></script>
-    <script src="assets/js/Popper.js "></script>
-    <script src="assets/js/bootstrap.min.js "></script>
-    <script src="assets/js/owl.carousel.min.js "></script>
-    <script src="assets/js/jquery.ajaxchimp.min.js "></script>
-    <script src="assets/js/jquery.magnific-popup.min.js "></script>
-    <script src="assets/js/plugins.js "></script>
-    <script src="assets/js/comparison.js "></script>
-    <script src="assets/js/jquery.waypoints.min.js "></script>
-    <script src="assets/js/menu.js "></script>
-    <script src="assets/js/nav-tool.js "></script>
-    <script src="assets/js/scrollax.js "></script>
-    <script src="assets/js/TweenMax.min.js "></script>
-    <script src="assets/js/parallaxie.js "></script>
-    <script src="assets/js/vivus.min.js "></script>
-    <script src="assets/js/main.js "></script>
-    <script src="form.js "></script>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/Popper.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/comparison.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/nav-tool.js"></script>
+    <script src="/js/scrollax.js"></script>
+    <script src="/js/TweenMax.min.js"></script>
+    <script src="/js/parallaxie.js"></script>
+    <script src="/js/vivus.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/form.js"></script>
     <!-- End js file -->
 </body>
 
