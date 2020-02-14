@@ -1,22 +1,22 @@
 {
-  "wp_theme_name": "wp-framework",
-  "wp_site_name": "wp-framework.local",
-  "name": "wp-framework",
+  "wp_theme_name": "fitness-planet",
+  "wp_site_name": "fitness-planet.local",
+  "name": "fitness-planet",
   "version": "2020.02.03",
   "description": "simple html and css framework. before run you need to install 'npm install -g gulp browserify babel jade stylus http-server'",
-  "homepage": "https://github.com/crazyyy/wp-framework#readme",
+  "homepage": "https://github.com/igorprots/fitness-planet#readme",
   "author": {
-    "name": "Vitali A.",
+    "name": "Igor P.",
     "email": "crazyyy@gmail.com",
     "url": "https://github.com/crazyyy/"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crazyyy/wp-framework.git"
+    "url": "git+https://github.com/igorprots/fitness-planet.git"
   },
   "bugs": {
-    "url": "https://github.com/crazyyy/wp-framework/issues"
+    "url": "https://github.com/igorprots/fitness-planet/issues"
   },
   "main": "html/index.html",
   "keywords": [

@@ -1,6 +1,6 @@
 {
-  "domain": "wp-framework.local",
-  "theme": "wp-framework",
+  "domain": "fitness-planet.local",
+  "theme": "fitness-planet",
   "path": {
     "base": {
       "src":"assets/",
