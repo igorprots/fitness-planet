@@ -1121,9 +1121,9 @@
 
 
     <!-- js file start -->
-    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="/js/Popper.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha256-5+02zu5UULQkO7w1GIr6vftCgMfFdZcAHeDtFnKZsBs=" crossorigin="anonymous"></script>
     <script src="/js/owl.carousel.min.js"></script>
     <script src="/js/jquery.ajaxchimp.min.js"></script>
     <script src="/js/jquery.magnific-popup.min.js"></script>
@@ -1137,6 +1137,7 @@
     <script src="/js/parallaxie.js"></script>
     <script src="/js/vivus.min.js"></script>
     <script src="/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha256-Kg2zTcFO9LXOc7IwcBx1YeUBJmekycsnTsq2RuFHSZU=" crossorigin="anonymous"></script>
     <script src="/js/form.js"></script>
     <!-- End js file -->
 </body>
