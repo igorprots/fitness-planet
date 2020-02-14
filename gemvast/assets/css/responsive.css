@@ -80,6 +80,10 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
         width: 60px;
         height: 60px;
     }
+    .xs-icon-wraper svg {
+        width: auto;
+        height: auto;
+    }
     .xs-service-content h3 {
         font-size: 1.25rem;
         margin: 20px 0 10px;
@@ -180,7 +184,7 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 @media (max-width: 991px) {
     .xs-section-padding,
     .xs-section-padding-lg {
-        padding: 70px 0;
+        padding: 20px 0;
     }
     .xs-section-heading,
     .xs-section-heading2 {
@@ -280,7 +284,7 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
         padding-top: 25px;
     }
     .xs-testimonial-owl .item {
-        padding-top: 40px;
+        padding-top: 80px;
     }
     .xs-testimonial-owl .item i {
         top: 20px;

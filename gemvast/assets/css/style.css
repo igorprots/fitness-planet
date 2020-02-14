@@ -1441,8 +1441,8 @@ button:focus {
 }
 
 .xs-banner-dark .xs-banner-title {
-    font-size: 5rem;
-    line-height: 6.25rem;
+    font-size: 5.3333rem;
+    line-height: 4.25rem;
     text-transform: inherit;
 }
 
@@ -1960,7 +1960,7 @@ button:focus {
 .xs-schedule-table-light .table tbody td {
     position: relative;
     padding: 0;
-    height: 99px;
+    height: 74px;
     border: 1px solid #343433;
     text-transform: uppercase;
     text-align: center;
@@ -1999,7 +1999,7 @@ button:focus {
 .xs-schedule-table .table tbody td .xs-schedule-info h4,
 .xs-schedule-table-dark .table tbody td .xs-schedule-info h4,
 .xs-schedule-table-light .table tbody td .xs-schedule-info h4 {
-    margin-top: -20px;
+    margin-top: -46px;
     font-size: 15px;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -2687,7 +2687,7 @@ button:focus {
 }
 
 .xs-testimonial-dark .item {
-    padding-top: 20px;
+    padding-top: 80px;
 }
 
 .xs-testimonial-dark .item p {
@@ -3893,9 +3893,13 @@ button:focus {
 }
 
 .widget-title {
-    margin: 15px 0 40px;
+    margin: 0;
     font-size: 1.5rem;
     color: #FFFFFF;
+}
+
+.widget-title_sch {
+    margin-bottom: 0 !important;
 }
 
 
@@ -3962,7 +3966,7 @@ button:focus {
 /* section padding */
 
 .xs-section-padding {
-    padding: 90px 0;
+    padding: 20px 0 0px;
 }
 
 .xs-section-padding-lg {
@@ -4538,7 +4542,7 @@ button:focus {
 .xs-form .xs-form-anim {
     position: relative;
     padding-top: 25px;
-    margin-bottom: 0;
+    margin-bottom: 24px;
 }
 
 .xs-form .xs-form-anim.active .input-label {
