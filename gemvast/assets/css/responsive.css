@@ -562,27 +562,36 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 /* Landscape phones and smaller */
 
 @media (max-width: 575px) {
-    #home {
-        background-image: url(/gemvast/assets/images/banner/banner-dark.jpg);
+    /* #home {
         background-repeat: no-repeat;
         background-size: 100%;
         background-attachment: fixed;
         background-position: center top;
+    } */
+    #home {
+        height: auto;
+    }
+    .banner-dark_img {
+        display: none;
+    }
+    .banner-dark_img-mob {
+        display: block;
+        height: auto !important;
     }
     .xs-banner-subtitle {
         font-size: 2rem;
         font-weight: 700;
     }
     .xs-banner-title {
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
     .xs-banner-area {
         padding-top: 30px;
         padding-bottom: 35px;
     }
     .xs-banner-area .xs-banner-title {
-        font-size: 1.25rem;
-        line-height: 2.625rem;
+        font-size: 1.25rem!important;
+        line-height: 2.625rem!important;
     }
     .xs-menu-tools {
         display: none;
