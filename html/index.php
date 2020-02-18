@@ -13,9 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,700,800,900" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/animate.css">
     <link rel="stylesheet" type="text/css" href="/css/iconfont.css">
     <link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css">
@@ -54,8 +53,8 @@
         <!-- xs-container -->
         <div class="xs-container">
             <div class="xs-navbar">
-                <a class="xs-navbar-brand" href="index.html">
-                    <img src="assets/images/logo/logo.png" alt="navbar logo">
+                <a class="xs-navbar-brand" href="/">
+                    <img src="/img/logo/logo.png" alt="navbar logo">
                 </a>
                 <nav class="elementskit-navbar ml-auto">
                     <!--  // god menu markup start -->
@@ -101,7 +100,7 @@
                         <div class="elementskit-nav-identity-panel">
                             <h1 class="elementskit-site-title">
                                 <a class="elementskit-nav-logo" href="../index.html">
-                                    <img src="assets/images/logo/logo-black.png" alt="navbar logo">
+                                    <img src="/img/logo/logo-black.png" alt="navbar logo">
                                 </a>
                             </h1>
                             <button class="elementskit-menu-close elementskit-menu-toggler" type="button">
@@ -129,8 +128,8 @@
 
     <!-- Banner -->
     <section class="position-relative xs-bg-cover parallaxie" id="home" data-scrollax-parent="true">
-        <img class="banner-dark_img" src="assets/images/banner/banner-dark.jpg" alt="">
-        <div class="xs-shape xs-banner-dark-shape" data-scrollax="properties: { translateY: '-250px' }" style="background-image: url(assets/images/shape/triangle_dots_01.png);"></div>
+        <img class="banner-dark_img" src="/img/banner/banner-dark.jpg" alt="">
+        <div class="xs-shape xs-banner-dark-shape" data-scrollax="properties: { translateY: '-250px' }" style="background-image: url(/img/shape/triangle_dots_01.png);"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -153,7 +152,7 @@
         <div class="row no-gutters">
             <div class="col-md-4">
                 <div class="xs-service">
-                    <img src="assets/images/services/service1.jpg" alt="service image">
+                    <img src="/img/services/service1.jpg" alt="service image">
                     <div class="xs-overlay d-flex align-items-center">
                         <div class="xs-service-content">
                             <div class="xs-icon-wraper">
@@ -171,7 +170,7 @@
 
             <div class="col-md-4">
                 <div class="xs-service">
-                    <img src="assets/images/services/service2.jpg" alt="service image">
+                    <img src="/img/services/service2.jpg" alt="service image">
                     <div class="xs-overlay d-flex align-items-center">
                         <div class="xs-service-content">
                             <div class="xs-icon-wraper">
@@ -189,7 +188,7 @@
 
             <div class="col-md-4">
                 <div class="xs-service">
-                    <img src="assets/images/services/service3.jpg" alt="service image">
+                    <img src="/img/services/service3.jpg" alt="service image">
                     <div class="xs-overlay d-flex align-items-center">
                         <div class="xs-service-content">
                             <div class="xs-icon-wraper">
@@ -207,7 +206,7 @@
 
             <div class="col-md-4">
                 <div class="xs-service">
-                    <img src="assets/images/services/service4.jpg" alt="service image">
+                    <img src="/img/services/service4.jpg" alt="service image">
                     <div class="xs-overlay d-flex align-items-center">
                         <div class="xs-service-content">
                             <div class="xs-icon-wraper">
@@ -228,7 +227,7 @@
 
             <div class="col-md-4">
                 <div class="xs-service">
-                    <img src="assets/images/services/service5.jpg" alt="service image">
+                    <img src="/img/services/service5.jpg" alt="service image">
                     <div class="xs-overlay d-flex align-items-center">
                         <div class="xs-service-content">
                             <div class="xs-icon-wraper">
@@ -249,7 +248,7 @@
 
             <div class="col-md-4">
                 <div class="xs-service">
-                    <img src="assets/images/services/service6.jpg" alt="service image">
+                    <img src="/img/services/service6.jpg" alt="service image">
                     <div class="xs-overlay d-flex align-items-center">
                         <div class="xs-service-content">
                             <div class="xs-icon-wraper">
@@ -291,8 +290,8 @@
                     <div class="col-lg-6">
                         <div class="xs-video-wraper">
                             <div class='twentytwenty-container xs-image-comparison'>
-                                <img src="assets/images/before.png" class="twentytwenty-before" alt="health">
-                                <img src="assets/images/after.png" class="twentytwenty-after" alt="health-2">
+                                <img src="/img/before.png" class="twentytwenty-before" alt="health">
+                                <img src="/img/after.png" class="twentytwenty-after" alt="health-2">
                             </div>
                             <div class="xs-video-shape" data-scrollax="properties: { translateY: '250px' }" style="background-image: url(assets/images/shape/help-shape.png);"></div>
                         </div>
@@ -844,7 +843,7 @@
                                 що я задоволена)))</p>
                             <div class="xs-testimonial-profile clearfix">
                                 <div class="xs-profile-thumb">
-                                    <img src="assets/images/testimonial/testimonial-profile-1.png" class="rounded-circle" alt="testimonial">
+                                    <img src="/img/testimonial/testimonial-profile-1.png" class="rounded-circle" alt="testimonial">
                                 </div>
                                 <div class="xs-profile-info">
                                     <h3>Ліза</h3>
@@ -857,7 +856,7 @@
                             <p>Дуже хороший спортзал, багато тренажерів і які з них дублюються. Також добре, що близько до транспорту і є велика парковка для авто. Один мінус дуже популярний зал)</p>
                             <div class="xs-testimonial-profile clearfix">
                                 <div class="xs-profile-thumb">
-                                    <img src="assets/images/testimonial/testimonial-profile-2.png" class="rounded-circle" alt="testimonial">
+                                    <img src="/img/testimonial/testimonial-profile-2.png" class="rounded-circle" alt="testimonial">
                                 </div>
                                 <div class="xs-profile-info">
                                     <h3>Влад</h3>
@@ -870,7 +869,7 @@
                             <p>Чудовий та просторий спортивний зал, багато якісних тренажерів! Персонал завжди допоможе, якщо виникають проблеми, та розкажуть як правильно виконувати ту чи іншу вправу!)</p>
                             <div class="xs-testimonial-profile clearfix">
                                 <div class="xs-profile-thumb">
-                                    <img src="assets/images/testimonial/testimonial-profile-3.png" class="rounded-circle" alt="testimonial">
+                                    <img src="/img/testimonial/testimonial-profile-3.png" class="rounded-circle" alt="testimonial">
                                 </div>
                                 <div class="xs-profile-info">
                                     <h3>Лідія</h3>
@@ -883,7 +882,7 @@
                             <p>Як на мене дуже непоганий клуб. Величезна кардіозона(особисто мені - важливо), величезний зал для групових і молода команда тренерів. Буду ходити!</p>
                             <div class="xs-testimonial-profile clearfix">
                                 <div class="xs-profile-thumb">
-                                    <img src="assets/images/testimonial/testimonial-profile-4.png" class="rounded-circle" alt="testimonial">
+                                    <img src="/img/testimonial/testimonial-profile-4.png" class="rounded-circle" alt="testimonial">
                                 </div>
                                 <div class="xs-profile-info">
                                     <h3>Світлана</h3>
@@ -896,7 +895,7 @@
                             <p>Гарні тренери з групових занять, дуже привітні дівчата на ресепшені і взагалі достатньо просторо.</p>
                             <div class="xs-testimonial-profile clearfix">
                                 <div class="xs-profile-thumb">
-                                    <img src="assets/images/testimonial/testimonial-profile-5.png" class="rounded-circle" alt="testimonial">
+                                    <img src="/img/testimonial/testimonial-profile-5.png" class="rounded-circle" alt="testimonial">
                                 </div>
                                 <div class="xs-profile-info">
                                     <h3>Мар'яна</h3>
@@ -980,28 +979,28 @@
                 <div class="col-12">
                     <div class="owl-carousel owl-theme xs-brand-owl">
                         <div class="item">
-                            <img src="assets/images/brand/brand1.png" alt="brand">
+                            <img src="/img/brand/brand1.png" alt="brand">
                         </div>
                         <div class="item">
-                            <img src="assets/images/brand/brand2.png" alt="brand">
+                            <img src="/img/brand/brand2.png" alt="brand">
                         </div>
                         <div class="item">
-                            <img src="assets/images/brand/brand3.png" alt="brand">
+                            <img src="/img/brand/brand3.png" alt="brand">
                         </div>
                         <div class="item">
-                            <img src="assets/images/brand/brand4.png" alt="brand">
+                            <img src="/img/brand/brand4.png" alt="brand">
                         </div>
                         <div class="item">
-                            <img src="assets/images/brand/brand5.png" alt="brand">
+                            <img src="/img/brand/brand5.png" alt="brand">
                         </div>
                         <div class="item">
-                            <img src="assets/images/brand/brand6.png" alt="brand">
+                            <img src="/img/brand/brand6.png" alt="brand">
                         </div>
                         <div class="item">
-                            <img src="assets/images/brand/brand7.png" alt="brand">
+                            <img src="/img/brand/brand7.png" alt="brand">
                         </div>
                         <div class="item">
-                            <img src="assets/images/brand/brand8.png" alt="brand">
+                            <img src="/img/brand/brand8.png" alt="brand">
                         </div>
                     </div>
                 </div>
@@ -1021,7 +1020,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-widget xs-mr-35">
                             <div class="xs-footer-logo">
-                                <img src="assets/images/logo/logo-red.png" alt="logo">
+                                <img src="/img/logo/logo-red.png" alt="logo">
                             </div>
                             <p>Зручний фітнес клуб у самому серці Вишеньки.</p>
                             <ul class="xs-footer-contact-info">
