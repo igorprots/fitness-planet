@@ -293,7 +293,7 @@
                                 <img src="/img/before.png" class="twentytwenty-before" alt="health">
                                 <img src="/img/after.png" class="twentytwenty-after" alt="health-2">
                             </div>
-                            <div class="xs-video-shape" data-scrollax="properties: { translateY: '250px' }" style="background-image: url(assets/images/shape/help-shape.png);"></div>
+                            <div class="xs-video-shape" data-scrollax="properties: { translateY: '250px' }" style="background-image: url(/img/shape/help-shape.png);"></div>
                         </div>
                     </div>
                 </div>
@@ -306,7 +306,7 @@
 
 
     <!-- Class Schedule -->
-    <section class="xs-section-padding xs-bg-cover xs-black-bg class-schedule-area parallaxie parallaxie" style="background-image: url(assets/images/about-us-about.jpg);" data-scrollax-parent="true" id="schedule">
+    <section class="xs-section-padding xs-bg-cover xs-black-bg class-schedule-area parallaxie parallaxie" style="background-image: url(/img/about-us-about.jpg);" data-scrollax-parent="true" id="schedule">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
@@ -744,7 +744,7 @@
             <!-- .row END -->
         </div>
         <!-- .container END -->
-        <div class="xs-pricing-dark-shape xs-bg-cover" data-scrollax="properties: { translateY: '-250px' }" style="background-image: url(assets/images/shape/pricing-dark.png);">
+        <div class="xs-pricing-dark-shape xs-bg-cover" data-scrollax="properties: { translateY: '-250px' }" style="background-image: url(/img/shape/pricing-dark.png);">
         </div>
         <div class="xs-pricing-dark">
             <div class="container">
@@ -827,7 +827,7 @@
 
 
     <!-- Testimonial Dark -->
-    <section id="review" class="position-relative xs-section-padding xs-bg-cover parallaxie parallaxie" style="background-image: url(assets/images/testimonial/testimonial_img2.jpg);">
+    <section id="review" class="position-relative xs-section-padding xs-bg-cover parallaxie parallaxie" style="background-image: url(/img/testimonial/testimonial_img2.jpg);">
         <div class="xs-overlay"></div>
         <div class="container">
             <div class="row">
@@ -1120,8 +1120,10 @@
 
 
     <!-- js file start -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha256-5+02zu5UULQkO7w1GIr6vftCgMfFdZcAHeDtFnKZsBs=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha256-5+02zu5UULQkO7w1GIr6vftCgMfFdZcAHeDtFnKZsBs=" crossorigin="anonymous"></script> -->
     <script src="/js/owl.carousel.min.js"></script>
     <script src="/js/jquery.ajaxchimp.min.js"></script>
     <script src="/js/plugins.js"></script>
@@ -1131,7 +1133,8 @@
     <script src="/js/nav-tool.js"></script>
     <script src="/js/scrollax.js"></script>
     <script src="/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha256-Kg2zTcFO9LXOc7IwcBx1YeUBJmekycsnTsq2RuFHSZU=" crossorigin="anonymous"></script>
+    <script src="/js/jquery.mask.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha256-Kg2zTcFO9LXOc7IwcBx1YeUBJmekycsnTsq2RuFHSZU=" crossorigin="anonymous"></script> -->
     <script src="/js/form.js"></script>
     <!-- End js file -->
 </body>

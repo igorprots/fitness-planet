@@ -1,6 +1,6 @@
 /**
  *  _______ _______  ______  _____                _______ _     _
- *  |______ |       |_____/ |     | |      |      |_____|  \___/ 
+ *  |______ |       |_____/ |     | |      |      |_____|  \___/
  *  ______| |_____  |    \_ |_____| |_____ |_____ |     | _/   \_
  *
  *  Parallax Scrolling Library
@@ -14,7 +14,7 @@
  *
  *  Licensed under the MIT license.
  *  http://opensource.org/licenses/MIT
- * 
+ *
  */
 (function(factory) {
     'use strict';
