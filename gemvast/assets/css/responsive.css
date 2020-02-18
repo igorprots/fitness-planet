@@ -582,9 +582,9 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
         font-size: 2rem;
         font-weight: 700;
     }
-    .xs-banner-title {
-        font-size: 2rem !important;
-    }
+    /* .xs-banner-title {
+        font-size: 3rem !important;
+    } */
     .xs-banner-area {
         padding-top: 30px;
         padding-bottom: 35px;
