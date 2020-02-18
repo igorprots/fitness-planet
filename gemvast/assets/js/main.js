@@ -25,9 +25,9 @@ jQuery(document).ready(function($) {
         };
         var trueMobile = a.any();
         if (null == trueMobile) {
-            var b = new Scrollax();
-            b.reload();
-            b.init();
+            // var b = new Scrollax();
+            // b.reload();
+            // b.init();
         }
     }
 
