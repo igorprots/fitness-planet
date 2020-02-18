@@ -24,7 +24,6 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
         width: 35px;
     }
     .xs-service-content .xs-icon-wraper {
-        font-size: 40px;
         line-height: 80px;
         width: 80px;
         height: 80px;
@@ -73,12 +72,6 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
     }
     .xs-service-content {
         padding: 0 30px;
-    }
-    .xs-service-content .xs-icon-wraper {
-        font-size: 30px;
-        line-height: 60px;
-        width: 60px;
-        height: 60px;
     }
     .xs-icon-wraper svg {
         width: auto;

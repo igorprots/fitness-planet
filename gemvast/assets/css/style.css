@@ -1762,13 +1762,25 @@ button:focus {
 }
 
 .xs-service-content .xs-icon-wraper {
+    position: relative;
     margin: 0 auto;
     border-radius: 50%;
-    font-size: 3.75rem;
+    font-size: 2.2rem;
     line-height: 105px;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100px;
     height: 100px;
+}
+
+.xs-icon-wraper i {}
+
+.xs-icon-wraper svg {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .xs-service-content h3 {

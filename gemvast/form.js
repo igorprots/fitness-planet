@@ -50,12 +50,12 @@ $(".xs-form").on("submit", function(e) {
 
     $(message).fadeIn(200);
     if (name != null && name.length == 0) {
-        $(message).addClass("message-err").html("Укажите своё имя");
+        $(message).addClass("message-err").html("Вкажіть ім'я");
         $(inputName).addClass('input-error');
         event.preventDefault();
     } else if (phone != null && phone.length == 0) {
         $(inputName).removeClass('input-error');
-        $(message).addClass("message-err").html("Укажите контактный телефон");
+        $(message).addClass("message-err").html("Вкажіть контактний телефон");
         $(inputPhone).addClass('input-error');
         event.preventDefault();
     } else {
@@ -66,7 +66,7 @@ $(".xs-form").on("submit", function(e) {
             type: 'POST',
             data: postData,
             beforeSend: function() {
-                $(message).html("Отправляем...");
+                $(message).html("Відправляємо...");
             },
             success: function(data) {
                 console.log('form sended ok, have a result')
