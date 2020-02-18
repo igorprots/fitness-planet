@@ -12,16 +12,6 @@ let env_prod = true;
 
 // TODO: retina display mixnis transfer from mixin
 
-if (env_prod === true) {
-    console.log('\x1b[32m', process.env.NODE_ENV);
-    console.log('\x1b[32m', '---------PRODUCTION ---------');
-    console.log('\x1b[36m', '---------Sourcemaps DISABLED!---------');
-} else {
-    console.log('\x1b[31m', process.env.NODE_ENV);
-    console.log('\x1b[31m', '---------DEV----------');
-    console.log('\x1b[31m', '---------Sourcemaps ENABLED!---------');
-}
-
 if (htmlOWp === false) {
     config.path.base.wp = './wordpress/wp-content/themes/' + config.theme + '/';
     // config.path.base.wp = './html/'; /* only for php files located in html */
@@ -31,23 +21,12 @@ if (htmlOWp === false) {
 
 /* browserSync config */
 let args;
-if (htmlOWp === true) {
-    args = {
-        notify: false,
-        port: 9080,
-        server: {
-            baseDir: config.path.base.dest,
-        }
-    }
-} else {
-    args = {
-        notify: false,
-        port: 9090,
-        proxy: config.domain,
-        host: config.domain
-    }
+args = {
+    notify: false,
+    port: 9090,
+    proxy: config.domain,
+    host: config.domain
 }
-
 
 /* import dependencies */
 import config from 'config';
