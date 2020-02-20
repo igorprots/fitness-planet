@@ -248,20 +248,12 @@ button:focus {
 =================================================*/
 
 #home {
-    width: 100vw;
-    height: 100vh;
     position: relative;
-}
-
-.banner-dark_img {
-    width: 100vw;
-    height: 100vh !important;
-    position: absolute;
-    object-fit: cover;
-}
-
-.banner-dark_img-mob {
-    display: none;
+    background-image: url(../images/banner/banner-dark.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 98.8px;
 }
 
 .megamenu_lists>li>a {
@@ -1434,8 +1426,8 @@ button:focus {
 
 .xs-banner-dark {
     padding-top: 300px;
-    padding-bottom: 200px;
-    padding-left: 45px;
+    padding-bottom: 50px;
+    padding-left: 90px;
     width: 100%;
 }
 
