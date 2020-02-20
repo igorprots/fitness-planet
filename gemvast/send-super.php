@@ -1,9 +1,9 @@
 <?php
 
-date_default_timezone_set('Europe/Moscow');
+date_default_timezone_set('Europe/Kiev');
 // User settings
-$to = "test@sdsa.com";
-$subject = "Заказ с главной посадочной страницы";
+$to = "office@planet-fitness.com.ua";
+$subject = "Повідомлення з сайту";
 
 
 
