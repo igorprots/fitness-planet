@@ -577,7 +577,7 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 
 @media (max-width: 575px) {
     #home {
-        background-image: url(/gemvast/assets/images/banner/banner-dark-mob.jpg);
+        background-image: url(../images/banner/banner-dark-mob.jpg);
         background-size: contain;
         background-position: center 150px;
     }
