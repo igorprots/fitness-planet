@@ -1,11 +1,13 @@
-/*
-Author: XpeedStudio
-Author URI: http://themeforest.net/user/XpeedStudio/portfolio
-*/
+@import 'bootstrap-scss/_bootstrap-grid.scss';
+@import 'bootstrap-scss/_bootstrap.scss';
 
-/* ==========================================================================
-    Author's custom styles
-========================================================================== */
+@import 'plugins/_owl.carousel.scss';
+@import 'plugins/_owl.theme.default.scss';
+
+@import 'import/_plugins.scss';
+
+@import 'font/_iconfont.scss';
+
 
 /*------------------------------ Table Of Content -------------------------
 
@@ -250,7 +252,7 @@ button:focus {
 
 #home {
   position: relative;
-  background-image: url(../images/banner/banner-dark.jpg);
+  background-image: url(../img/banner/banner-dark.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -704,7 +706,7 @@ button:focus {
     -webkit-transition: all .4s ease-in .8s;
     -o-transition: all .4s ease-in .8s;
     transition: all .4s ease-in .8s;
-    cursor: url(img/cross-out.png), pointer;
+    cursor: url(../img/cross-out.png), pointer;
   }
 
   .widget-heading {
@@ -1281,7 +1283,7 @@ button:focus {
     -ms-transform: skew(-22deg);
     transform: skew(-22deg);
     background-image: -moz-linear-gradient(0deg, #c41330 0%, #f63c25 100%);
-    background-image: -webkit-linear-gradient(0deg, #c41330 0%, #f63c25 100%);
+    background-image: linear-gradient(0deg, #c41330 0%, #f63c25 100%);
     background-image: -ms-linear-gradient(0deg, #c41330 0%, #f63c25 100%);
   }
 
@@ -4573,4 +4575,5 @@ input {
   cursor: e-resize;
 }
 
-/*# sourceMappingURL=style.css.map */
+
+@import '_responsive.scss';

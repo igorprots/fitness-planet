@@ -12,15 +12,6 @@ let env_prod = true;
 
 // TODO: retina display mixnis transfer from mixin
 
-if (env_prod === true) {
-  console.log('\x1b[32m', process.env.NODE_ENV);
-  console.log('\x1b[32m', '---------PRODUCTION ---------');
-  console.log('\x1b[36m', '---------Sourcemaps DISABLED!---------');
-} else {
-  console.log('\x1b[31m', process.env.NODE_ENV);
-  console.log('\x1b[31m', '---------DEV----------');
-  console.log('\x1b[31m', '---------Sourcemaps ENABLED!---------');
-}
 
 if (htmlOWp === false) {
   config.path.base.wp = './wordpress/wp-content/themes/' + config.theme + '/';
@@ -31,23 +22,12 @@ if (htmlOWp === false) {
 
 /* browserSync config */
 let args;
-if (htmlOWp === true) {
-  args = {
-    notify: false,
-    port: 9080,
-    server: {
-      baseDir: config.path.base.dest,
-    }
-  }
-} else {
-  args = {
-    notify: false,
-    port: 9090,
-    proxy: config.domain,
-    host: config.domain
-  }
+args = {
+  notify: false,
+  port: 9090,
+  proxy: config.domain,
+  host: config.domain
 }
-
 
 /* import dependencies */
 import config from 'config';
@@ -86,19 +66,19 @@ const plugins = require('gulp-load-plugins')({
 });
 
 let processors = [
-  charset(),
-  willChangeTransition(),
-  willChange(),
-  momentumScrolling([
-    'scroll'
-  ]),
-  discardDuplicates(),
-  discardEmpty(),
-  combineDuplicatedSelectors({
-    removeDuplicatedProperties: true
-  }),
+  // charset(),
+  // willChangeTransition(),
+  // willChange(),
+  // momentumScrolling([
+  //   'scroll'
+  // ]),
+  // discardDuplicates(),
+  // discardEmpty(),
+  // combineDuplicatedSelectors({
+  //   removeDuplicatedProperties: true
+  // }),
   easysprite({
-    imagePath:'./assets/img/sprites',
+    imagePath: './assets/img/sprites',
     spritePath: './assets/img/sprites'
   }),
   // webpcss({
@@ -110,7 +90,7 @@ let processors = [
   //     return a.localeCompare(b);
   //   }
   // }),
-  urlrev(),
+  // urlrev(),
   postcssPresetEnv({
     stage: 4,
     warnForDuplicates: false
@@ -124,10 +104,10 @@ let processors = [
 
 
 // Compile and automatically prefix stylesheets
-gulp.task('styles', function() {
+gulp.task('styles', function () {
   // For best performance, don't add Sass partials to `gulp.src`
   let source = config.path.styles.srcfiles,
-  destination = config.path.styles.dest;
+    destination = config.path.styles.dest;
   return gulp.src(source)
     .pipe(customPlumber('Error Running Sass'))
     .pipe(plugins.newer(destination))
@@ -138,14 +118,14 @@ gulp.task('styles', function() {
       onError: console.error.bind(console, 'Sass error:')
     }))
     .pipe(plugins.postcss(processors))
-    .pipe(plugins.if(!env_prod, plugins.sourcemaps.write('maps', {includeContent: true})))
+    .pipe(plugins.if(!env_prod, plugins.sourcemaps.write('maps', { includeContent: true })))
     .pipe(gulp.dest(destination))
     .pipe(plugins.filter('**/*.css'))
     .pipe(plugins.size({
       showFiles: true,
       title: 'task: SCSS && PostCSS'
     }))
-    .pipe(browserSync.reload({stream: true}));
+    .pipe(browserSync.reload({ stream: true }));
 });
 
 
@@ -154,49 +134,49 @@ gulp.task('image:default', function () {
   return gulp
     .src(config.path.images.srcimg)
     .pipe(plugins.newer(config.path.images.dest))
-    .pipe(plugins.bytediff.start())
-    .pipe(plugins.if(
-      '*.png',
-      plugins.imagemin([
-        imageminPngquant(),
-        imageminAdvpng(),
-      ])
-    ))
-    .pipe(plugins.if(
-      '*.jp*g',
-      plugins.imagemin([
-        imageminMozjpeg({progressive: true}),
-        imageminGuetzli({quality: 95}),
-      ])
-    ))
-    .pipe(plugins.if(
-      '*.gif',
-      plugins.imagemin([
-        plugins.imagemin.gifsicle({
-          interlaced: true
-        }),
-      ])
-    ))
-    .pipe(plugins.if(
-      '*.svg',
-      plugins.imagemin([
-        plugins.imagemin.svgo({
-          plugins: [{
-            removeViewBox: true
-          }]
-        })
-      ])
-    ))
-    .pipe(plugins.bytediff.stop(function(data) {
-      var difference = (data.savings > 0) ? ' smaller.' : ' larger.';
-      return data.fileName + ' is ' + data.percent + '%' + difference;
-    }))
-    .pipe(plugins.size({
-      showFiles: true,
-      title: 'task:image: '
-    }))
+    // .pipe(plugins.bytediff.start())
+    // .pipe(plugins.if(
+    //   '*.png',
+    //   plugins.imagemin([
+    //     imageminPngquant(),
+    //     imageminAdvpng(),
+    //   ])
+    // ))
+    // .pipe(plugins.if(
+    //   '*.jp*g',
+    //   plugins.imagemin([
+    //     imageminMozjpeg({ progressive: true }),
+    //     imageminGuetzli({ quality: 95 }),
+    //   ])
+    // ))
+    // .pipe(plugins.if(
+    //   '*.gif',
+    //   plugins.imagemin([
+    //     plugins.imagemin.gifsicle({
+    //       interlaced: true
+    //     }),
+    //   ])
+    // ))
+    // .pipe(plugins.if(
+    //   '*.svg',
+    //   plugins.imagemin([
+    //     plugins.imagemin.svgo({
+    //       plugins: [{
+    //         removeViewBox: true
+    //       }]
+    //     })
+    //   ])
+    // ))
+    // .pipe(plugins.bytediff.stop(function (data) {
+    //   var difference = (data.savings > 0) ? ' smaller.' : ' larger.';
+    //   return data.fileName + ' is ' + data.percent + '%' + difference;
+    // }))
+    // .pipe(plugins.size({
+    //   showFiles: true,
+    //   title: 'task:image: '
+    // }))
     .pipe(gulp.dest(config.path.images.dest))
-    .pipe(browserSync.reload({stream: true}));
+    .pipe(browserSync.reload({ stream: true }));
 });
 
 
@@ -226,37 +206,37 @@ gulp.task('image:sprite', function () {
       title: 'task: image_sprite: '
     }))
     .pipe(gulp.dest(config.path.images.dest + 'sprites/'))
-    .pipe(browserSync.reload({stream: true}));
+    .pipe(browserSync.reload({ stream: true }));
 });
 
 
-gulp.task("image:image2webp", function() {
-  return gulp.src([config.path.images.dest + '**/*.{png,jpg,jpeg}'])
-    // .pipe(plugins.newer(config.path.images.dest))
-    .pipe(plugins.imagemin([
-      imageminWebp({
-        quality: 95
-      })
-    ]))
-    .pipe(extReplace(".webp"))
-    .pipe(gulp.dest(config.path.images.dest));
+gulp.task("image:image2webp", function () {
+  // return gulp.src([config.path.images.dest + '**/*.{png,jpg,jpeg}'])
+  //   // .pipe(plugins.newer(config.path.images.dest))
+  //   .pipe(plugins.imagemin([
+  //     imageminWebp({
+  //       quality: 95
+  //     })
+  //   ]))
+  //   .pipe(extReplace(".webp"))
+  //   .pipe(gulp.dest(config.path.images.dest));
 });
 
-gulp.task("image:image2webpContent", function() {
-  return gulp.src(config.path.images.srcImgContent + '**/*.{png,jpg,jpeg}')
-    // .pipe(plugins.newer(config.path.images.dest))
-    .pipe(plugins.imagemin([
-      imageminWebp({
-        quality: 95
-      })
-    ]))
-    .pipe(extReplace(".webp"))
-    .pipe(gulp.dest(config.path.images.srcImgContent));
+gulp.task("image:image2webpContent", function () {
+  // return gulp.src(config.path.images.srcImgContent + '**/*.{png,jpg,jpeg}')
+  //   // .pipe(plugins.newer(config.path.images.dest))
+  //   .pipe(plugins.imagemin([
+  //     imageminWebp({
+  //       quality: 95
+  //     })
+  //   ]))
+  //   .pipe(extReplace(".webp"))
+  //   .pipe(gulp.dest(config.path.images.srcImgContent));
 });
 
 
 // Copy web fonts to dist
-gulp.task('fonts', function() {
+gulp.task('fonts', function () {
   return gulp.src(config.path.fonts.src)
     .pipe(customPlumber('Error Running Fonts'))
     .pipe(plugins.newer(config.path.fonts.dest))
@@ -265,36 +245,37 @@ gulp.task('fonts', function() {
       showFiles: true,
       title: 'task:fonts'
     }))
-    .pipe(browserSync.reload({stream: true}));
+    .pipe(browserSync.reload({ stream: true }));
 });
 
 
 var jsConcat = lazypipe()
-  .pipe(plugins.concat, 'scripts.js', {newLine: '\n;'})
+  .pipe(plugins.concat, 'scripts.js', { newLine: '\n;' })
 
 // Optimize script
-gulp.task('scripts', function() {
+gulp.task('scripts', function () {
   return gulp.src(config.path.scripts.src)
     .pipe(customPlumber('Error Running Scripts'))
     .pipe(plugins.newer(config.path.scripts.dest))
     .pipe(customPlumber('Error Compiling Scripts'))
     .pipe(plugins.if(!env_prod, plugins.sourcemaps.init()))
     .pipe(plugins.babel({
-			presets: ['env']
-		}))
+      presets: ['env']
+    }))
     .pipe(plugins.if(['scripts.js' /*,'scripts2.js'*/], jsConcat()))
     .pipe(plugins.if('*.js', plugins.uglify()))
-    .pipe(plugins.if(!env_prod, plugins.sourcemaps.write('maps', {includeContent: true})))
+    .pipe(plugins.if(!env_prod, plugins.sourcemaps.write('maps', { includeContent: true })))
     .pipe(gulp.dest(config.path.scripts.dest))
     .pipe(plugins.filter('**/*.js'))
     .pipe(plugins.size({
       showFiles: true,
       title: 'task:scripts:'
     }))
-    .pipe(browserSync.reload({stream: true}));
+    .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('task:images', gulp.series('image:default', 'image:sprite', 'image:image2webp'));
+// gulp.task('task:images', gulp.series('image:default', 'image:sprite', 'image:image2webp'));
+gulp.task('task:images', gulp.series('image:default'));
 gulp.task('task:images-styles', gulp.series('task:images', 'styles'));
 gulp.task('parallel-scripts-images-styles', gulp.parallel('task:images-styles', 'scripts', 'fonts'));
 
@@ -307,14 +288,14 @@ gulp.task('default', gulp.parallel(
 
 gulp.task('build', gulp.parallel(
   'task:images-styles',
-  'image:image2webpContent', // tempolary disable it
+  // 'image:image2webpContent', // tempolary disable it
   'scripts',
   'fonts',
 ));
 
 
 // watch for changes
-gulp.task('watch', function() {
+gulp.task('watch', function () {
 
   browserSync.init(args);
 
