@@ -816,7 +816,7 @@
 
 
     <!-- Testimonial Dark -->
-    <section id="review" class="position-relative xs-section-padding xs-bg-cover parallaxie parallaxie" style="background-image: url(img/testimonial/testimonial_img2.jpg);">
+    <section id="review" class="position-relative xs-section-padding xs-bg-cover parallaxie parallaxie" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/testimonial/testimonial_img2.jpg);">
         <div class="xs-overlay"></div>
         <div class="container">
             <div class="row">
@@ -1117,20 +1117,4 @@
     </footer>
     <!-- footer end -->
 
-
-    <!-- js file start -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/comparison.js"></script>
-    <script src="js/scrollax.js"></script>
-    <script src="js/parallaxie.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/nav-tool.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- End js file -->
-</body>
-
-</html>
+<?php get_footer(); ?>
